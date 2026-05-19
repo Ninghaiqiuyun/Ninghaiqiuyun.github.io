@@ -383,26 +383,44 @@
         @media (max-width: 768px) {
             .navbar {
                 text-align: center;
+                padding: 15px;
             }
 
             .navbar nav {
                 float: none;
                 margin-top: 15px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
             }
 
             .navbar nav a {
-                margin: 0 15px;
+                margin: 0;
+                font-size: 14px;
             }
 
             .header h1 {
-                font-size: 28px;
+                font-size: 24px;
+            }
+
+            .header p {
+                font-size: 14px;
             }
 
             .banner .overlay-text h2 {
-                font-size: 30px;
+                font-size: 28px;
+            }
+
+            .banner .overlay-text p {
+                font-size: 16px;
             }
 
             .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
                 grid-template-columns: 1fr;
             }
 
