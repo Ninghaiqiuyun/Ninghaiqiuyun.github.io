@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="宁海秋韵全屋定制工厂，本地源头工厂直营。采用ENF级环保板材、德国PUR封边工艺，提供衣柜、橱柜、榻榻米等全屋定制服务。免费上门量房设计。">
+    <meta name="keywords" content="宁海全屋定制,宁海衣柜定制,宁海橱柜,秋韵木业,环保板材,工厂直营">
+    <meta property="og:title" content="宁海秋韵全屋定制工厂 | 品质生活专家">
+    <meta property="og:description" content="本地源头工厂直营，采用ENF级环保板材，德国PUR封边工艺。为您打造理想家居。">
+    <meta property="og:type" content="website">
     <title>宁海秋韵全屋定制工厂 | 上海市秋韵木业有限公司宁海分公司</title>
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -428,12 +437,63 @@
                 padding: 40px 20px;
             }
         }
-    </style>
+    
+        /* 悬浮操作按钮 FAB */
+        .fab {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            text-decoration: none;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+        .fab:hover {
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            .fab { width: 50px; height: 50px; font-size: 24px; bottom: 20px; right: 20px; }
+        }
+    
+        .counter {
+            font-weight: bold;
+            color: #e74c3c;
+            font-size: 1.1em;
+        }
+</style>
+
+    <!-- JSON-LD 结构化数据，提升本地 SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "宁海秋韵全屋定制工厂",
+      "image": "https://ninghaiqiuyun.github.io/image/工厂展厅1.jpg",
+      "telephone": "18268500705",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "梅林街道上陈家208号",
+        "addressLocality": "宁海县",
+        "addressRegion": "宁波市",
+        "addressCountry": "CN"
+      },
+      "url": "https://ninghaiqiuyun.github.io/"
+    }
+    </script>
 </head>
 <body>
     <div class="container">
         <!-- 导航栏 -->
-        <div class="navbar">
+        <header class="navbar">
             <a href="#" class="logo">秋韵定制</a>
             <nav>
                 <a href="#about">关于我们</a>
@@ -445,6 +505,9 @@
             </nav>
         </div>
 
+        </header>
+
+        <main>
         <!-- 顶部标题 -->
         <div class="header">
             <h1>宁海秋韵全屋定制工厂</h1>
@@ -465,38 +528,38 @@
 
         <!-- 关于我们 -->
         <div id="about" class="section">
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-up">
                 <h2>关于我们</h2>
             </div>
             <div class="about-content">
                 <div>
                     <p><strong>宁海秋韵全屋定制工厂</strong>，隶属于上海市秋韵木业有限公司宁海分公司，是宁海本地规模领先的全屋定制实体企业。公司拥有数千平方米自有生产厂房，配备专业设计团队和德国进口自动化生产设备，打造标准化、精细化的定制家居生产体系。</p>
                     <p>我们始终坚持<strong>"工厂直营·品质至上"</strong>的经营理念，砍掉所有中间环节，直接对接终端客户。采用国际领先的ENF级环保板材，配合德国豪迈PUR封边工艺，确保每一件产品都达到E0级环保标准，为您的家人健康保驾护航。</p>
-                    <p>十余年来，秋韵定制已服务宁海及周边地区<strong>3000+家庭</strong>，涵盖别墅、洋房、公寓等各类户型，以精湛的工艺、贴心的服务和高性价比赢得了广大客户的信赖与好评。</p>
+                    <p>十余年来，秋韵定制已服务宁海及周边地区<strong><span class="counter" data-target="3000">0</span>+家庭</strong>，涵盖别墅、洋房、公寓等各类户型，以精湛的工艺、贴心的服务和高性价比赢得了广大客户的信赖与好评。</p>
                 </div>
                 <div class="about-image">
-                    <img src="image/工厂展厅1.jpg" alt="公司展厅">
+                    <a href="image/工厂展厅1.jpg" data-fancybox="gallery" data-caption="公司展厅"><img src="image/工厂展厅1.jpg" alt="公司展厅" loading="lazy"></a>
                 </div>
             </div>
 
             <!-- 特色亮点 -->
             <div class="features">
-                <div class="feature-item">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="icon">🏭</div>
                     <h3>自有工厂</h3>
-                    <p>3000㎡现代化生产基地，德国豪迈数控设备，标准化流水线作业，确保品质稳定如一</p>
+                    <p><span class="counter" data-target="3000">0</span>㎡现代化生产基地，德国豪迈数控设备，标准化流水线作业，确保品质稳定如一</p>
                 </div>
-                <div class="feature-item">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="icon">🌿</div>
                     <h3>环保板材</h3>
                     <p>精选ENF级环保板材，甲醛释放量≤0.025mg/m³，远超国家标准，守护家人健康</p>
                 </div>
-                <div class="feature-item">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="icon">🔧</div>
                     <h3>精湛工艺</h3>
-                    <p>德国PUR封边工艺，防水防潮耐老化，30年品质保证，细节彰显匠心</p>
+                    <p>德国PUR封边工艺，防水防潮耐老化，<span class="counter" data-target="30">0</span>年品质保证，细节彰显匠心</p>
                 </div>
-                <div class="feature-item">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="icon">💼</div>
                     <h3>工厂直营</h3>
                     <p>无中间商差价，性价比领先同行30%，设计、生产、安装一站式服务</p>
@@ -506,69 +569,69 @@
 
         <!-- 工厂实拍 -->
         <div id="factory" class="section" style="background: #fafafa;">
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-up">
                 <h2>工厂实拍</h2>
             </div>
-            <p style="text-align:center; color:#666; margin-bottom:30px;">3000㎡现代化生产基地，全程透明化生产流程，让您放心选择</p>
+            <p style="text-align:center; color:#666; margin-bottom:30px;"><span class="counter" data-target="3000">0</span>㎡现代化生产基地，全程透明化生产流程，让您放心选择</p>
             <div class="grid">
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120158.jpg" alt="厂房外观">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120158.jpg" data-fancybox="gallery" data-caption="厂房外观"><img src="image/微信图片_20260519120158.jpg" alt="厂房外观" loading="lazy"></a>
                     <div class="content">
                         <h3>厂房外观</h3>
-                        <p>3000㎡现代化生产基地，独立园区，环境整洁</p>
+                        <p><span class="counter" data-target="3000">0</span>㎡现代化生产基地，独立园区，环境整洁</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120156.jpg" alt="生产车间">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120156.jpg" data-fancybox="gallery" data-caption="生产车间"><img src="image/微信图片_20260519120156.jpg" alt="生产车间" loading="lazy"></a>
                     <div class="content">
                         <h3>数控生产车间</h3>
                         <p>德国豪迈CNC加工中心，精准切割，误差≤0.1mm</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120153.jpg" alt="板材堆放">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120153.jpg" data-fancybox="gallery" data-caption="板材堆放"><img src="image/微信图片_20260519120153.jpg" alt="板材堆放" loading="lazy"></a>
                     <div class="content">
                         <h3>原材料仓储区</h3>
                         <p>ENF级环保板材，防潮防尘仓储，严格品控管理</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120150.jpg" alt="成品衣柜实拍">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120150.jpg" data-fancybox="gallery" data-caption="成品衣柜实拍"><img src="image/微信图片_20260519120150.jpg" alt="成品衣柜实拍" loading="lazy"></a>
                     <div class="content">
                         <h3>成品展示区</h3>
                         <p>多样化风格样品，直观展示定制效果</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120147.jpg" alt="工厂展厅">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120147.jpg" data-fancybox="gallery" data-caption="工厂展厅"><img src="image/微信图片_20260519120147.jpg" alt="工厂展厅" loading="lazy"></a>
                     <div class="content">
                         <h3>设计体验中心</h3>
                         <p>专业设计师一对一服务，VR全景体验</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120145.jpg" alt="生产设备">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120145.jpg" data-fancybox="gallery" data-caption="生产设备"><img src="image/微信图片_20260519120145.jpg" alt="生产设备" loading="lazy"></a>
                     <div class="content">
                         <h3>封边生产线</h3>
                         <p>德国PUR封边机，无缝贴合，防水耐用</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120143.jpg" alt="开料设备">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120143.jpg" data-fancybox="gallery" data-caption="开料设备"><img src="image/微信图片_20260519120143.jpg" alt="开料设备" loading="lazy"></a>
                     <div class="content">
                         <h3>精密开料区</h3>
                         <p>全自动开料机，高效精准切割</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120140.jpg" alt="打孔设备">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120140.jpg" data-fancybox="gallery" data-caption="打孔设备"><img src="image/微信图片_20260519120140.jpg" alt="打孔设备" loading="lazy"></a>
                     <div class="content">
                         <h3>数控打孔区</h3>
                         <p>五面钻加工中心，一次定位精准打孔</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120137.jpg" alt="质检区">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120137.jpg" data-fancybox="gallery" data-caption="质检区"><img src="image/微信图片_20260519120137.jpg" alt="质检区" loading="lazy"></a>
                     <div class="content">
                         <h3>品质检验区</h3>
                         <p>严格质量把控，确保出厂合格</p>
@@ -579,48 +642,48 @@
 
         <!-- 产品中心 -->
         <div id="products" class="section">
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-up">
                 <h2>产品中心</h2>
             </div>
             <p style="text-align:center; color:#666; margin-bottom:30px;">全屋定制一站式解决方案，满足您对理想家居的所有想象</p>
             <div class="grid">
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120352.jpg" alt="定制衣柜">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120352.jpg" data-fancybox="gallery" data-caption="定制衣柜"><img src="image/微信图片_20260519120352.jpg" alt="定制衣柜" loading="lazy"></a>
                     <div class="content">
                         <h3>定制衣柜</h3>
                         <p>平开门/推拉门/步入式衣帽间，多种风格可选</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120350.jpg" alt="整体橱柜">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120350.jpg" data-fancybox="gallery" data-caption="整体橱柜"><img src="image/微信图片_20260519120350.jpg" alt="整体橱柜" loading="lazy"></a>
                     <div class="content">
                         <h3>整体橱柜</h3>
                         <p>L型/U型/开放式厨房，石英石台面，环保柜体</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120347.jpg" alt="榻榻米">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120347.jpg" data-fancybox="gallery" data-caption="榻榻米"><img src="image/微信图片_20260519120347.jpg" alt="榻榻米" loading="lazy"></a>
                     <div class="content">
                         <h3>榻榻米定制</h3>
                         <p>书房/儿童房多功能空间，升降桌+储物一体化</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120344.jpg" alt="阳台柜">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120344.jpg" data-fancybox="gallery" data-caption="阳台柜"><img src="image/微信图片_20260519120344.jpg" alt="阳台柜" loading="lazy"></a>
                     <div class="content">
                         <h3>阳台柜定制</h3>
                         <p>洗衣柜/收纳柜/储物柜，防水防潮设计</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120341.jpg" alt="书柜">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120341.jpg" data-fancybox="gallery" data-caption="书柜"><img src="image/微信图片_20260519120341.jpg" alt="书柜" loading="lazy"></a>
                     <div class="content">
                         <h3>书柜定制</h3>
                         <p>开放式/封闭式书柜，书房整体设计</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120338.jpg" alt="鞋柜">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120338.jpg" data-fancybox="gallery" data-caption="鞋柜"><img src="image/微信图片_20260519120338.jpg" alt="鞋柜" loading="lazy"></a>
                     <div class="content">
                         <h3>鞋柜定制</h3>
                         <p>入户鞋柜/玄关柜，大容量收纳设计</p>
@@ -631,48 +694,48 @@
 
         <!-- 实景案例 -->
         <div id="cases" class="section" style="background: #fafafa;">
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-up">
                 <h2>宁海本地实景案例</h2>
             </div>
             <p style="text-align:center; color:#666; margin-bottom:30px;">精选宁海本地真实案例，见证品质与口碑</p>
             <div class="grid">
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120336.jpg" alt="檀悦府120㎡衣柜">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120336.jpg" data-fancybox="gallery" data-caption="檀悦府120㎡衣柜"><img src="image/微信图片_20260519120336.jpg" alt="檀悦府120㎡衣柜" loading="lazy"></a>
                     <div class="content">
                         <h3>檀悦府 120㎡</h3>
                         <p>轻奢风格定制衣柜，一门到顶设计</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120333.jpg" alt="西子国际90㎡橱柜">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120333.jpg" data-fancybox="gallery" data-caption="西子国际90㎡橱柜"><img src="image/微信图片_20260519120333.jpg" alt="西子国际90㎡橱柜" loading="lazy"></a>
                     <div class="content">
                         <h3>西子国际 90㎡</h3>
                         <p>现代简约整体橱柜，石英石台面</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120329.jpg" alt="东方润园89㎡榻榻米">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120329.jpg" data-fancybox="gallery" data-caption="东方润园89㎡榻榻米"><img src="image/微信图片_20260519120329.jpg" alt="东方润园89㎡榻榻米" loading="lazy"></a>
                     <div class="content">
                         <h3>东方润园 89㎡</h3>
                         <p>日式榻榻米多功能房，书房+客房一体</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120327.jpg" alt="桃源里140㎡">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120327.jpg" data-fancybox="gallery" data-caption="桃源里140㎡"><img src="image/微信图片_20260519120327.jpg" alt="桃源里140㎡" loading="lazy"></a>
                     <div class="content">
                         <h3>桃源里 140㎡</h3>
                         <p>新中式全屋定制，整体书房设计</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120321.jpg" alt="万科城115㎡">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120321.jpg" data-fancybox="gallery" data-caption="万科城115㎡"><img src="image/微信图片_20260519120321.jpg" alt="万科城115㎡" loading="lazy"></a>
                     <div class="content">
                         <h3>万科城 115㎡</h3>
                         <p>北欧风格定制，多功能阳台柜</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <img src="image/微信图片_20260519120318.jpg" alt="碧桂园130㎡">
+                <div class="grid-item" data-aos="fade-up">
+                    <a href="image/微信图片_20260519120318.jpg" data-fancybox="gallery" data-caption="碧桂园130㎡"><img src="image/微信图片_20260519120318.jpg" alt="碧桂园130㎡" loading="lazy"></a>
                     <div class="content">
                         <h3>碧桂园 130㎡</h3>
                         <p>现代轻奢定制，主卧衣柜+梳妆台</p>
@@ -683,20 +746,20 @@
 
         <!-- 资质报告 -->
         <div id="cert" class="section">
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-up">
                 <h2>资质报告</h2>
             </div>
             <div class="cert-grid">
-                <div class="cert-item">
-                    <img src="certification/营业制造.png" alt="营业执照">
+                <div class="cert-item" data-aos="fade-up" data-aos-delay="100">
+                    <a href="certification/营业制造.png" data-fancybox="gallery" data-caption="营业执照"><img src="certification/营业制造.png" alt="营业执照" loading="lazy"></a>
                     <p>企业营业执照</p>
                 </div>
-                <div class="cert-item">
-                    <img src="certification/板材报告1.png" alt="板材检测报告">
+                <div class="cert-item" data-aos="fade-up" data-aos-delay="100">
+                    <a href="certification/板材报告1.png" data-fancybox="gallery" data-caption="板材检测报告"><img src="certification/板材报告1.png" alt="板材检测报告" loading="lazy"></a>
                     <p>板材检测报告</p>
                 </div>
-                <div class="cert-item">
-                    <img src="certification/板材报告2.png" alt="环保认证报告">
+                <div class="cert-item" data-aos="fade-up" data-aos-delay="100">
+                    <a href="certification/板材报告2.png" data-fancybox="gallery" data-caption="环保认证报告"><img src="certification/板材报告2.png" alt="环保认证报告" loading="lazy"></a>
                     <p>环保认证报告</p>
                 </div>
             </div>
@@ -704,39 +767,40 @@
 
         <!-- 联系我们 -->
         <div id="contact" class="contact">
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-up">
                 <h2>联系我们</h2>
             </div>
             <p style="text-align:center; color:rgba(255,255,255,0.8); margin-bottom:30px;">专业团队随时为您服务，欢迎来电咨询或到厂参观</p>
             <div class="contact-info">
-                <div class="contact-item">
+                <div class="contact-item" data-aos="fade-up">
                     <div class="icon">🏢</div>
                     <h3>企业主体</h3>
                     <p>上海市秋韵木业有限公司宁海分公司</p>
                 </div>
-                <div class="contact-item">
+                <div class="contact-item" data-aos="fade-up">
                     <div class="icon">📍</div>
                     <h3>工厂地址</h3>
                     <p>浙江省宁波市宁海县梅林街道上陈家208号</p>
+                    <p><a href="https://uri.amap.com/search?keyword=浙江省宁波市宁海县梅林街道上陈家208号" target="_blank" style="color: #3498db; text-decoration: none;">🗺️ 点击查看高德地图</a></p>
                 </div>
-                <div class="contact-item">
+                <div class="contact-item" data-aos="fade-up">
                     <div class="icon">📞</div>
                     <h3>咨询热线</h3>
                     <p>陈小姐：18268500705（设计咨询）</p>
                     <p>潘先生：18892628886（业务洽谈）</p>
                 </div>
-                <div class="contact-item">
+                <div class="contact-item" data-aos="fade-up">
                     <div class="icon">🎯</div>
                     <h3>服务范围</h3>
                     <p>宁海及周边地区，免费上门量房+专业设计</p>
                 </div>
-                <div class="contact-item">
+                <div class="contact-item" data-aos="fade-up">
                     <div class="icon">🎵</div>
                     <h3>抖音账号</h3>
                     <p>宁海秋韵全屋定制工厂</p>
                     <p>抖音号：11328566683</p>
                 </div>
-                <div class="contact-item">
+                <div class="contact-item" data-aos="fade-up">
                     <div class="icon">📕</div>
                     <h3>小红书账号</h3>
                     <p>宁海秋韵全屋定制工厂</p>
@@ -745,10 +809,67 @@
             </div>
         </div>
 
+        </main>
+
         <!-- 页脚 -->
-        <div class="footer">
+        <footer class="footer">
             <p>© 2024 宁海秋韵全屋定制工厂 | 上海市秋韵木业有限公司宁海分公司 | 专注品质 · 服务到家</p>
-        </div>
+        </footer>
     </div>
+
+    <!-- FAB 悬浮按钮 -->
+    <a href="tel:18268500705" class="fab" title="免费预约量房">📞</a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Fancybox
+        Fancybox.bind("[data-fancybox]", {
+            // Options
+        });
+        
+        // Initialize AOS animations
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Number Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const inc = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 15);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+            });
+        };
+
+        // Trigger counter animation when about section is in view
+        let counted = false;
+        window.addEventListener('scroll', () => {
+            const aboutSection = document.getElementById('about');
+            if (aboutSection && !counted) {
+                const rect = aboutSection.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    animateCounters();
+                    counted = true;
+                }
+            }
+        });
+    </script>
 </body>
 </html>
