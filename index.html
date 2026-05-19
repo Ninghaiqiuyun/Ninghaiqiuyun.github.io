@@ -388,8 +388,21 @@
             font-size: 14px;
         }
 
+        
+        /* 移动端底部导航条 */
+        .mobile-bottom-bar { display: none; position: fixed; bottom: 0; left: 0; width: 100%; background: #fff; box-shadow: 0 -2px 15px rgba(0,0,0,0.1); z-index: 1000; height: 65px; }
+        .mobile-bottom-bar a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #333; text-decoration: none; font-size: 12px; border-right: 1px solid #eee; }
+        .mobile-bottom-bar a:last-child { border-right: none; }
+        .mobile-bottom-bar a .icon { font-size: 22px; margin-bottom: 4px; }
+        .mobile-bottom-bar a.primary { background: linear-gradient(135deg, #8B5A2B, #A0522D); color: white; font-weight: bold; font-size: 14px; }
+        .mobile-bottom-bar a.primary .icon { font-size: 20px; }
+
         /* 响应式设计 */
         @media (max-width: 768px) {
+                        .mobile-bottom-bar { display: flex; }
+            body { padding-bottom: 65px; } /* 避开底部导航条 */
+            .fab { display: none !important; } /* 手机端隐藏右侧悬浮球，使用底部主导航 */
+            .navbar nav { display: none; } /* 手机端隐藏顶部冗余导航，聚焦转化 */
             .navbar {
                 flex-direction: column;
                 padding: 15px;
