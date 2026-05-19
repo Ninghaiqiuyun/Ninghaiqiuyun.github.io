@@ -9,6 +9,10 @@
     <meta property="og:title" content="宁海秋韵全屋定制工厂 | 品质生活专家">
     <meta property="og:description" content="始创于2003年的宁海本地全屋定制工厂，工厂直营、环保板材、PUR封边工艺，支持免费上门量房。">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ninghaiqiuyun.github.io/">
+    <meta property="og:image" content="https://ninghaiqiuyun.github.io/image/%E5%B7%A5%E5%8E%82%E5%B1%95%E5%8E%851.jpg">
+    <link rel="canonical" href="https://ninghaiqiuyun.github.io/">
+    <link rel="preload" as="image" href="image/微信图片_20260519120350.jpg">
     <title>宁海秋韵全屋定制工厂 | 上海市秋韵木业有限公司宁海分公司</title>
     <!-- Fancybox CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
@@ -185,6 +189,34 @@
             box-shadow: 0 14px 30px rgba(135, 81, 28, 0.34);
         }
 
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .hero-link-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 180px;
+            padding: 13px 24px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.36);
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            backdrop-filter: blur(8px);
+            transition: transform 0.25s ease, background 0.25s ease;
+        }
+
+        .hero-link-secondary:hover {
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.16);
+        }
+
         .hero-badges {
             display: flex;
             flex-wrap: wrap;
@@ -287,6 +319,46 @@
             font-size: 16px;
             margin-bottom: 14px;
             text-align: justify;
+        }
+
+        .commitment-box {
+            margin-top: 18px;
+            padding: 18px;
+            border-radius: var(--radius-md);
+            background: linear-gradient(180deg, #fff9f2 0%, #fff 100%);
+            border: 1px solid #f0e3d2;
+        }
+
+        .commitment-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 12px;
+        }
+
+        .commitment-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px 16px;
+            list-style: none;
+        }
+
+        .commitment-list li {
+            color: var(--muted);
+            font-size: 14px;
+            position: relative;
+            padding-left: 18px;
+        }
+
+        .commitment-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-deep) 100%);
         }
 
         .about-image {
@@ -746,6 +818,16 @@
                 padding: 12px 18px;
             }
 
+            .hero-actions {
+                flex-direction: column;
+            }
+
+            .hero-link-secondary {
+                width: 100%;
+                min-width: 0;
+                padding: 12px 18px;
+            }
+
             .trust-strip {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
                 gap: 12px;
@@ -788,6 +870,10 @@
 
             .about-content p {
                 font-size: 15px;
+            }
+
+            .commitment-list {
+                grid-template-columns: 1fr;
             }
 
             .grid {
@@ -908,6 +994,7 @@
                 <a href="#factory">工厂实拍</a>
                 <a href="#products">产品中心</a>
                 <a href="#cases">实景案例</a>
+                <a href="#process">服务流程</a>
                 <a href="#cert">资质荣誉</a>
                 <a href="#contact">联系我们</a>
             </nav>
@@ -936,7 +1023,10 @@
                         <span class="hero-badge">透明报价沟通</span>
                         <span class="hero-badge">支持到厂看样</span>
                     </div>
-                    <a href="tel:18268500705" class="btn">立即预约量房</a>
+                    <div class="hero-actions">
+                        <a href="tel:18268500705" class="btn">立即预约量房</a>
+                        <a href="https://uri.amap.com/search?keyword=浙江省宁波市宁海县梅林街道上陈家208号" target="_blank" rel="noopener noreferrer" class="hero-link-secondary">导航到厂看样</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -965,11 +1055,21 @@
             <div class="section-title" data-aos="fade-up">
                 <h2>关于我们</h2>
             </div>
+            <p class="section-subtitle">不做空洞宣传，更看重方案落地、工艺稳定和长期使用体验。对宁海及周边家庭来说，选择本地工厂，沟通、复尺、安装和售后都更高效。</p>
             <div class="about-content">
                 <div>
                     <p><strong>宁海秋韵全屋定制工厂</strong>，隶属于上海市秋韵木业有限公司宁海分公司，<strong>始创于2003年</strong>，是宁海本地规模领先的全屋定制实体企业。公司拥有数千平方米自有生产厂房，配备专业设计团队和德国进口自动化生产设备，打造标准化、精细化的定制家居生产体系。</p>
                     <p>我们始终坚持<strong>"工厂直营·品质至上"</strong>的经营理念，砍掉所有中间环节，直接对接终端客户。采用国际领先的ENF级环保板材，配合德国豪迈PUR封边工艺，确保每一件产品都达到E0级环保标准，为您的家人健康保驾护航。</p>
                     <p>自2003年成立以来，二十余年深耕定制行业，秋韵定制已服务宁海及周边地区<strong><span class="counter" data-target="860">0</span>+家庭</strong>，涵盖别墅、洋房、公寓等各类户型，以精湛的工艺、贴心的服务和高性价比赢得了广大客户的信赖与好评。</p>
+                    <div class="commitment-box">
+                        <div class="commitment-title">我们更重视这 4 件事</div>
+                        <ul class="commitment-list">
+                            <li>现场量房与复尺更细，减少安装返工</li>
+                            <li>板材、五金、工艺沟通更透明</li>
+                            <li>风格与收纳并重，不只好看也好用</li>
+                            <li>本地安装与售后响应更直接</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="about-image">
                     <a href="image/工厂展厅1.jpg" data-fancybox="gallery" data-caption="公司展厅"><img src="image/工厂展厅1.jpg" alt="公司展厅" loading="lazy"></a>
@@ -1199,6 +1299,10 @@
                 <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                     <h3>预约量房和设计需要收费吗？</h3>
                     <p>宁海及周边地区完全免费！我们提供免费上门量房、出具专业平面方案和3D全景效果图（设计费另算），不满意不收费，让您做到心中有数再决定是否合作。</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <h3>可以先到工厂或展厅看样，再决定是否合作吗？</h3>
+                    <p>可以。我们欢迎客户先到厂看板材、看工艺、看展厅样式，再根据您的户型和预算深入沟通。先看清楚，再下决定，会更安心也更高效。</p>
                 </div>
             </div>
         </div>
